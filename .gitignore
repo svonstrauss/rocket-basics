@@ -1,0 +1,23 @@
+Project_info.docx
+docs/PLAN.md
+docs/PROJECT_ROADMAP.md
+__pycache__/
+*.pyc
+.env
+.venv
+
+# Build artifacts
+src/shared/EarthViewer/build/
+*.obj
+*.lib
+*.exe
+*.tlog/
+*.recipe
+*.sln
+*.vcxproj
+*.vcxproj.filters
+CMakeCache.txt
+CMakeFiles/
+
+# Data files (generated)
+src/shared/EarthViewer/data/*.csv
