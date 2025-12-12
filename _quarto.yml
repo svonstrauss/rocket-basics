@@ -3,6 +3,7 @@ project:
   output-dir: _site
   render:
     - index.qmd
+    - simulations.qmd
     # Notebooks (kept in-module, rendered into the website)
     - src/Module_01_Foundations/Learn/01_Introduction_to_Rocket_Science.ipynb
     - src/Module_01_Foundations/Learn/02_Orbital_Mechanics_Basics.ipynb
@@ -19,6 +20,8 @@ website:
     left:
       - text: Home
         href: index.qmd
+      - text: Simulations
+        href: simulations.qmd
       - text: Module 1 (Foundations)
         menu:
           - text: Intro to Rocket Science
@@ -38,6 +41,12 @@ website:
     right:
       - icon: github
         href: "https://github.com/svonstrauss/rocket-basics"
+
+execute:
+  freeze: false
+  echo: true
+  warning: false
+  error: false
 
 format:
   html:

@@ -1,0 +1,22 @@
+#!/bin/bash
+set -e
+
+# Start the Propellant Explorer Streamlit app in the background so it can be used via:
+# https://mybinder.org/... ?urlpath=proxy/8501/
+#
+# Note: the baseUrlPath MUST match the proxy path for assets/websockets to work.
+if command -v streamlit >/dev/null 2>&1; then
+  streamlit run src/Module_03_Propulsion/Projects/Propellant_Explorer/app.py \
+    --server.address 0.0.0.0 \
+    --server.port 8501 \
+    --server.headless true \
+    --server.enableCORS false \
+    --server.enableXsrfProtection false \
+    --server.baseUrlPath proxy/8501 \
+    >/tmp/streamlit.log 2>&1 &
+fi
+
+# Continue with the standard Binder entrypoint (JupyterLab)
+exec "$@"
+
+

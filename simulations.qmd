@@ -1,0 +1,224 @@
+---
+title: "Simulations"
+subtitle: "How to run each project (local + browser options where supported)"
+---
+
+::: {.callout-important}
+GitHub Pages is a **static** website. It can show the code, text, and plots — but it can’t run Python on the page.
+:::
+
+## What can I do next?
+
+- **If you want the full experience** (interactive Matplotlib windows, keyboard controls, smooth animation): run locally.
+- **If you want “click and run in browser”**: use Binder/Colab (best for notebooks) and Binder/Streamlit (best for `Propellant_Explorer`).
+
+---
+
+## Module 1 — Foundations
+
+::: {.columns}
+::: {.column width="45%"}
+![Preview of the Rocket Ascent Simulator](assets/simulations/rocket_ascent.png)
+:::
+::: {.column width="55%"}
+### Rocket Ascent Simulator
+
+**What it is:** A launch simulation with thrust, drag, gravity losses, and live telemetry.  
+**Next step:** Run it and watch how a gravity turn changes the trajectory.
+
+- **Read**: [`README.md`](src/Module_01_Foundations/Projects/Rocket_Ascent_Simulator/README.md)
+- **Run locally**:
+
+```bash
+cd src/Module_01_Foundations/Projects/Rocket_Ascent_Simulator
+pip install -r requirements.txt
+python simulation.py
+```
+:::
+:::
+
+::: {.columns}
+::: {.column width="45%"}
+![Preview of the Conic Orbit Visualizer](assets/simulations/conic_orbits.png)
+:::
+::: {.column width="55%"}
+### Conic Orbit Visualizer
+
+**What it is:** Explore circular/elliptic/hyperbolic trajectories and the meaning of eccentricity.  
+**Next step:** Change eccentricity and see how the orbit shape changes.
+
+- **Read**: [`README.md`](src/Module_01_Foundations/Projects/Conic_Orbit_Visualizer/README.md)
+- **Run locally**:
+
+```bash
+cd src/Module_01_Foundations/Projects/Conic_Orbit_Visualizer
+pip install -r requirements.txt
+python visualizer.py
+```
+:::
+:::
+
+---
+
+## Module 2 — Orbital Mechanics
+
+::: {.columns}
+::: {.column width="45%"}
+![Preview of the Satellite Constellation Propagator](assets/simulations/constellation_propagator.png)
+:::
+::: {.column width="55%"}
+### Satellite Constellation Propagator
+
+**What it is:** Propagate satellite orbits and visualize ground tracks / coverage (multi‑constellation examples).  
+**Next step:** Compare a LEO communications shell vs a MEO navigation system.
+
+- **Read**: [`README.md`](src/Module_02_Orbital_Mechanics/Projects/Starlink_Propagator/README.md)
+- **Run locally**:
+
+```bash
+cd src/Module_02_Orbital_Mechanics/Projects/Starlink_Propagator
+pip install -r requirements.txt
+python propagator.py
+```
+:::
+:::
+
+::: {.columns}
+::: {.column width="45%"}
+![Preview of the Mars Mission Simulator](assets/simulations/mars_mission.png)
+:::
+::: {.column width="55%"}
+### Mars Mission Simulator
+
+**What it is:** Transfer geometry, launch windows, transit, and EDL explained step‑by‑step.  
+**Next step:** Run the mission planner, then open the porkchop plot to see why windows matter.
+
+- **Read**: [`README.md`](src/Module_02_Orbital_Mechanics/Projects/Starship_Trajectory_Planner/README.md)
+- **Run locally**:
+
+```bash
+cd src/Module_02_Orbital_Mechanics/Projects/Starship_Trajectory_Planner
+pip install -r requirements.txt
+python mission_planner.py
+python porkchop/plotter.py
+```
+:::
+:::
+
+---
+
+## Module 3 — Propulsion & Systems
+
+::: {.columns}
+::: {.column width="45%"}
+![Preview of the Propellant Explorer web app](assets/simulations/propellant_explorer.png)
+:::
+::: {.column width="55%"}
+### Propellant Explorer (Web App)
+
+**What it is:** Compare propellants (Isp + density), balance combustion ratios, and compute \(\Delta v\) with sliders.  
+**Next step:** Open the web app and try to design a rocket that reaches LEO.
+
+- **Read**: [`README.md`](src/Module_03_Propulsion/Projects/Propellant_Explorer/README.md)
+- **Run locally**:
+
+```bash
+cd src/Module_03_Propulsion/Projects/Propellant_Explorer
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+- **Run in browser (Binder, one‑click)**: [Launch Propellant Explorer](https://mybinder.org/v2/gh/svonstrauss/rocket-basics/HEAD?urlpath=proxy/8501/)
+
+:::
+:::
+
+::: {.columns}
+::: {.column width="45%"}
+![Preview of the Launch Vehicle Trade Simulator](assets/simulations/trade_simulator.png)
+:::
+::: {.column width="55%"}
+### Launch Vehicle Trade Simulator
+
+**What it is:** Explore how \(I_{sp}\), dry mass, propellant, and mission target change payload capability.  
+**Next step:** Try “Moon” vs “Mars” and see how quickly payload collapses.
+
+- **Read**: [`README.md`](src/Module_03_Propulsion/Projects/Starship_Trade_Simulator/README.md)
+- **Run locally**:
+
+```bash
+cd src/Module_03_Propulsion/Projects/Starship_Trade_Simulator
+pip install -r requirements.txt
+python trade_simulator.py
+```
+:::
+:::
+
+::: {.columns}
+::: {.column width="45%"}
+![Preview of the Constellation Designer](assets/simulations/constellation_designer.png)
+:::
+::: {.column width="55%"}
+### Constellation Designer
+
+**What it is:** Design constellation shells and visualize coverage concepts (Walker patterns, geometry).  
+**Next step:** Compare architectures for comms vs Earth observation.
+
+- **Read**: [`README.md`](src/Module_03_Propulsion/Projects/Constellation_Designer/README.md)
+- **Run locally**:
+
+```bash
+cd src/Module_03_Propulsion/Projects/Constellation_Designer
+pip install -r requirements.txt
+python designer.py
+```
+:::
+:::
+
+---
+
+## Module 4 — Human Factors & Policy
+
+::: {.columns}
+::: {.column width="45%"}
+![Preview of the Crew Safety Simulator](assets/simulations/crew_safety.png)
+:::
+::: {.column width="55%"}
+### Crew Safety Simulator
+
+**What it is:** Visualize g‑loads and vibration response with a mass‑spring‑damper model.  
+**Next step:** Tune damping ratio and see how it changes comfort and peak loads.
+
+- **Read**: [`README.md`](src/Module_04_Human_Factors/Projects/Crew_Safety_Simulator/README.md)
+- **Run locally**:
+
+```bash
+cd src/Module_04_Human_Factors/Projects/Crew_Safety_Simulator
+pip install -r requirements.txt
+python simulator.py
+```
+:::
+:::
+
+::: {.columns}
+::: {.column width="45%"}
+![Preview of the Space Policy Risk Calculator](assets/simulations/policy_calculator.png)
+:::
+::: {.column width="55%"}
+### Space Policy Risk Calculator
+
+**What it is:** A structured way to think about regulatory + operational risk (debris, licensing, spectrum, safety).  
+**Next step:** Try different mission profiles and see how risk categories shift.
+
+- **Read**: [`README.md`](src/Module_04_Human_Factors/Projects/Space_Policy_Calculator/README.md)
+- **Run locally**:
+
+```bash
+cd src/Module_04_Human_Factors/Projects/Space_Policy_Calculator
+pip install -r requirements.txt
+python calculator.py
+```
+:::
+:::
+
+

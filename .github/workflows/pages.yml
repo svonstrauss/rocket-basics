@@ -30,6 +30,7 @@ jobs:
       - name: Install Jupyter tooling (for .ipynb rendering)
         run: |
           python -m pip install --upgrade pip
+          pip install -r binder/requirements.txt
           pip install jupyter nbformat nbconvert
 
       - name: Setup Quarto

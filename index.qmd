@@ -20,6 +20,7 @@ Rocket Basics is a hands-on collection of Python simulations and notebooks that 
 
 [Start Module 1: Intro to Rocket Science →](src/Module_01_Foundations/Learn/01_Introduction_to_Rocket_Science.ipynb){.btn .btn-primary}
 [Browse all notebooks](#notebooks){.btn .btn-outline-secondary}
+[See the simulations →](simulations.qmd){.btn .btn-outline-secondary}
 
 ## Notebooks {#notebooks}
 
