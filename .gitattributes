@@ -1,0 +1,8 @@
+# Normalize line endings so Linux-based tooling (GitHub Actions, Binder) works reliably.
+* text=auto
+
+# Shell scripts must use LF (avoids "/bin/bash^M" errors).
+*.sh text eol=lf
+binder/start text eol=lf
+
+
