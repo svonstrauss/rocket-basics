@@ -1,70 +1,76 @@
 # Module 2: Orbital Mechanics and Mission Design
 
 **Duration:** 8 Weeks  
-**Goal:** Master the physics of orbital motion and apply it to real mission planning scenarios.
+**Goal:** Master orbital mechanics for satellite operations and interplanetary mission planning.
 
-## Projects
+## 🎓 Learning Path
 
-1. **[Starlink Orbit Propagator](Projects/Starlink_Propagator/README.md):** Simulates satellite constellation dynamics with J2 perturbation effects.
-2. **[Starship Trajectory Planner](Projects/Starship_Trajectory_Planner/README.md):** Plans interplanetary Hohmann transfers and visualizes launch windows via Porkchop Plots.
+Start with the interactive notebooks in the `Learn/` folder:
 
-## Core Concepts
+| Notebook | Topics Covered | Time |
+|----------|---------------|------|
+| `01_Interplanetary_Travel.ipynb` | Hohmann transfers, Delta-V, Launch windows | 1-2 hours |
 
-### Keplerian Orbital Elements
-Every orbit can be uniquely described by six parameters:
-- **a** (Semi-major axis): Size of the orbit
-- **e** (Eccentricity): Shape (0 = circle, 0-1 = ellipse, 1 = parabola, >1 = hyperbola)
-- **i** (Inclination): Tilt relative to equatorial plane
-- **Ω** (RAAN): Where the orbit crosses the equator going north
-- **ω** (Argument of Periapsis): Where periapsis is within the orbital plane
-- **ν** (True Anomaly): Current position along the orbit
+## 🚀 Projects
 
-### J2 Perturbations
-Earth isn't a perfect sphere—it bulges at the equator. This causes:
-- **Nodal Regression:** RAAN drifts over time (used by sun-synchronous satellites)
-- **Apsidal Rotation:** Argument of periapsis rotates
+### 1. [Starlink Orbit Propagator](Projects/Starlink_Propagator/README.md)
+Propagate satellite orbits with real physics:
+- J2 perturbation effects
+- Ground track visualization
+- Multi-constellation support (GPS, GLONASS, Galileo, etc.)
 
-### Hohmann Transfers
-The most fuel-efficient way to move between two circular orbits:
-1. Burn at periapsis to raise apoapsis to target orbit
-2. Coast along transfer ellipse
-3. Burn at apoapsis to circularize
+```bash
+cd Projects/Starlink_Propagator
+python propagator.py
+```
 
-$$\Delta v_{total} = \Delta v_1 + \Delta v_2$$
+### 2. [Mars Mission Simulator](Projects/Starship_Trajectory_Planner/README.md)
+Complete Earth-to-Mars mission simulation:
+- Animated Hohmann transfer
+- Entry, Descent, Landing (EDL) simulation
+- Porkchop plot analysis
+- Historical mission data
 
-### Lambert's Problem
-Given two position vectors and a time of flight, find the orbit connecting them. This is the foundation of trajectory optimization and Porkchop Plot generation.
+```bash
+cd Projects/Starship_Trajectory_Planner
+python mission_planner.py
+```
 
-## Weekly Schedule
+## 📚 Key Concepts
 
-### Week 1-2: Two-Body Problem
-- Kepler's Laws derivation
-- Orbital elements and conversions
-- Vis-viva equation
+### Orbital Elements
+- Semi-major axis (a) - orbit size
+- Eccentricity (e) - orbit shape
+- Inclination (i) - orbit tilt
 
-### Week 3-4: Orbital Maneuvers
-- Hohmann transfers
-- Bi-elliptic transfers
-- Plane changes
+### Key Equations
 
-### Week 5-6: Perturbations
-- J2 effects on LEO satellites
-- Atmospheric drag
-- Third-body perturbations
+**Vis-Viva Equation:**
+$$v = \sqrt{\mu\left(\frac{2}{r} - \frac{1}{a}\right)}$$
 
-### Week 7-8: Mission Design
-- Lambert's Problem
-- Porkchop Plots
-- Launch window analysis
+**Hohmann Transfer Time:**
+$$T = \pi\sqrt{\frac{a^3}{\mu}}$$
 
-## Tools & Libraries
-- `numpy` - Numerical computation
-- `matplotlib` - Visualization and animation
-- `scipy` - ODE solvers and optimization
-- `skyfield` - Ephemeris data (optional)
+**Orbital Period:**
+$$T = 2\pi\sqrt{\frac{a^3}{\mu}}$$
 
-## References
-- Vallado, D. "Fundamentals of Astrodynamics and Applications"
-- Curtis, H. "Orbital Mechanics for Engineering Students"
-- NASA JPL Horizons (ephemeris data)
+## 🌍 Real Mission Data Included
 
+| Mission | Agency | Type |
+|---------|--------|------|
+| Starlink | SpaceX | LEO Internet |
+| GPS | US Space Force | Navigation |
+| Galileo | ESA | Navigation |
+| BeiDou | CNSA | Navigation |
+| Perseverance | NASA | Mars Rover |
+| Tianwen-1 | CNSA | Mars Orbiter+Rover |
+
+## 🛠️ Setup
+
+```bash
+pip install numpy matplotlib scipy
+```
+
+---
+
+*"The universe is a pretty big place. If it's just us, seems like an awful waste of space."* — Carl Sagan

@@ -1,46 +1,80 @@
 # Module 1: Foundations in Math, Physics, and Computation
 
-**Duration:** 8 Weeks
-**Goal:** Establish the core math and physics needed for rocketry while building two portfolio-worthy projects.
+**Duration:** 8 Weeks  
+**Goal:** Build the core math and physics foundation for rocket science through hands-on learning.
 
-## Projects
-1.  **[Rocket Ascent Simulator](Projects/Rocket_Ascent_Simulator/README.md):** A 3D motion simulator with drag and a simple ML angle optimizer.
-2.  **[Conic Orbit Visualizer](Projects/Conic_Orbit_Visualizer/README.md):** A tool to plot and analyze orbital trajectories.
+## 🎓 Learning Path
 
-## Weekly Schedule
+Start with the interactive notebooks in the `Learn/` folder:
 
-### [Week 1: Parametric Equations & Conic Sections](Week_01/README.md)
-*   **Focus:** Orbit shapes, parametric/polar equations.
-*   **Tasks:**
-    *   **Day 1:** Intro to Parametric Equations (Code: Parametric Circle Plotter).
-    *   **Day 2:** Polar Coordinates & Orbits (Code: Conic Visualizer w/ Eccentricity).
-    *   **Day 3:** Calculus in Polar Coordinates (Code: Velocity Calculation).
-    *   **Day 4:** Conic Sections as Orbits.
-    *   **Day 5:** Review & Quiz.
+| Notebook | Topics Covered | Time |
+|----------|---------------|------|
+| `01_Introduction_to_Rocket_Science.ipynb` | Newton's Laws, Rocket Equation, Gravity | 1-2 hours |
+| `02_Orbital_Mechanics_Basics.ipynb` | Orbits, Orbital Velocity, LEO/GEO | 1-2 hours |
 
-### Week 2: Vectors & 3D Motion
-*   **Focus:** 3D space, dot/cross products.
+## 🚀 Projects
 
-### Week 3: Vector-Valued Functions & Projectile Motion
-*   **Focus:** Physics of motion ($r(t)$, $v(t)$, $a(t)$).
+After completing the learning notebooks, explore the interactive simulators:
 
-### Week 4: Forces & Newton's Laws (3D)
-*   **Focus:** Forces acting on a rocket.
+### 1. [Rocket Ascent Simulator](Projects/Rocket_Ascent_Simulator/README.md)
+A 3D rocket launch simulation with:
+- Realistic physics (thrust, drag, gravity)
+- RK4 numerical integration
+- Visual trajectory analysis
 
-### Week 5: Differential Equations (ODEs) - Basics
-*   **Focus:** Modeling dynamic systems.
+```bash
+cd Projects/Rocket_Ascent_Simulator
+python simulation.py
+```
 
-### Week 6: Numerical Methods & Simulation
-*   **Focus:** Euler's Method, Runge-Kutta (RK4).
+### 2. [Conic Orbit Visualizer](Projects/Conic_Orbit_Visualizer/README.md)
+Interactive orbital trajectory visualization:
+- Different orbit types (circular, elliptical, hyperbolic)
+- Real mission data from NASA, ESA, CNSA, ISRO
+- Delta-V calculations
 
-### Week 7: Optimization & Intro to Machine Learning
-*   **Focus:** Gradient Descent, simple optimization.
+```bash
+cd Projects/Conic_Orbit_Visualizer
+python visualizer.py
+```
 
-### Week 8: Final Integration & Portfolio Polish
-*   **Focus:** Completing projects and documentation.
+## 📚 Key Concepts Covered
 
-## Setup
-1.  Install Python (Anaconda recommended).
-2.  Install libraries: `numpy`, `matplotlib`, `scikit-learn`.
-3.  Create a `rocket-basics` GitHub repo (if not already done).
+### Physics
+- Newton's Laws of Motion
+- Gravitational Force
+- Conservation of Momentum
+- Orbital Mechanics basics
 
+### Mathematics
+- Parametric equations
+- Polar coordinates
+- Differential equations
+- Numerical methods (Euler, RK4)
+
+### Equations You'll Master
+
+**Rocket Equation:**
+$$\Delta v = v_e \cdot \ln\left(\frac{m_0}{m_f}\right)$$
+
+**Orbital Velocity:**
+$$v = \sqrt{\frac{\mu}{r}}$$
+
+**Gravitational Acceleration:**
+$$g = \frac{GM}{r^2}$$
+
+## 🛠️ Setup
+
+```bash
+pip install numpy matplotlib scipy
+```
+
+## 📖 External Resources
+
+- [NASA Glenn Research Center](https://www.grc.nasa.gov/www/k-12/rocket/rktprs.html) - Rocket physics tutorials
+- [Kerbal Space Program](https://www.kerbalspaceprogram.com/) - Learn orbital mechanics through play
+- [3Blue1Brown](https://www.youtube.com/c/3blue1brown) - Beautiful math visualizations
+
+---
+
+*"The rocket equation is like a cruel equation. It's not your friend."* — Elon Musk
