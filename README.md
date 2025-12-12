@@ -2,6 +2,8 @@
 
 A hands-on educational repository for learning aerospace engineering, orbital mechanics, and rocket science through executable Python simulations. Built from first principles with real physics.
 
+**Project site (notebooks + docs):** [svonstrauss.github.io/rocket-basics](https://svonstrauss.github.io/rocket-basics/)
+
 **Perfect for:** Students, developers curious about aerospace, or anyone who's ever wondered "how does a rocket actually get to orbit?"
 
 ---

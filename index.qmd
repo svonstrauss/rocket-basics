@@ -1,0 +1,67 @@
+---
+title: "Rocket Basics"
+subtitle: "Learn space engineering through executable code"
+---
+
+::: {.callout-note}
+GitHub Pages is a **static** site. You can **read** the notebooks here, and you can **run** them using **Binder / Colab** or by running locally.
+:::
+
+## What is this?
+
+Rocket Basics is a hands-on collection of Python simulations and notebooks that teach:
+
+- **How rockets generate thrust**
+- **Why rockets need so much fuel (the rocket equation)**
+- **How orbits work**
+- **How missions to the Moon and Mars are planned**
+
+## What can I do next?
+
+[Start Module 1: Intro to Rocket Science →](src/Module_01_Foundations/Learn/01_Introduction_to_Rocket_Science.ipynb){.btn .btn-primary}
+[Browse all notebooks](#notebooks){.btn .btn-outline-secondary}
+
+## Notebooks {#notebooks}
+
+### Module 1 (Foundations)
+
+- [Intro to Rocket Science](src/Module_01_Foundations/Learn/01_Introduction_to_Rocket_Science.ipynb)
+- [Orbital Mechanics Basics](src/Module_01_Foundations/Learn/02_Orbital_Mechanics_Basics.ipynb)
+
+### Module 2 (Orbital Mechanics)
+
+- [Interplanetary Travel](src/Module_02_Orbital_Mechanics/Learn/01_Interplanetary_Travel.ipynb)
+
+### Module 3 (Propulsion)
+
+- [Rocket Engines](src/Module_03_Propulsion/Learn/01_Rocket_Engines.ipynb)
+- [Propellants Deep Dive](src/Module_03_Propulsion/Learn/02_Propellants_Deep_Dive.ipynb)
+
+## Run notebooks in your browser (no install)
+
+### Binder (runs a full Jupyter environment)
+
+- [Start Module 1 (Binder)](https://mybinder.org/v2/gh/svonstrauss/rocket-basics/HEAD?labpath=src/Module_01_Foundations/Learn/01_Introduction_to_Rocket_Science.ipynb)
+- [Orbital Mechanics Basics (Binder)](https://mybinder.org/v2/gh/svonstrauss/rocket-basics/HEAD?labpath=src/Module_01_Foundations/Learn/02_Orbital_Mechanics_Basics.ipynb)
+- [Interplanetary Travel (Binder)](https://mybinder.org/v2/gh/svonstrauss/rocket-basics/HEAD?labpath=src/Module_02_Orbital_Mechanics/Learn/01_Interplanetary_Travel.ipynb)
+- [Rocket Engines (Binder)](https://mybinder.org/v2/gh/svonstrauss/rocket-basics/HEAD?labpath=src/Module_03_Propulsion/Learn/01_Rocket_Engines.ipynb)
+- [Propellants Deep Dive (Binder)](https://mybinder.org/v2/gh/svonstrauss/rocket-basics/HEAD?labpath=src/Module_03_Propulsion/Learn/02_Propellants_Deep_Dive.ipynb)
+
+### Colab (fastest “click and run”)
+
+- [Start Module 1 (Colab)](https://colab.research.google.com/github/svonstrauss/rocket-basics/blob/main/src/Module_01_Foundations/Learn/01_Introduction_to_Rocket_Science.ipynb)
+
+## Interactive “apps” (hosted separately)
+
+Some projects need a Python backend (they cannot run directly on GitHub Pages):
+
+- **Propellant Explorer (Streamlit app)**: deploy via Streamlit Community Cloud using `src/Module_03_Propulsion/Projects/Propellant_Explorer/app.py`
+
+## Run locally (best for full simulations)
+
+```bash
+pip install -r src/Module_03_Propulsion/Projects/Propellant_Explorer/requirements.txt
+streamlit run src/Module_03_Propulsion/Projects/Propellant_Explorer/app.py
+```
+
+

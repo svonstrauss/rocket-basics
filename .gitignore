@@ -1,10 +1,12 @@
 Project_info.docx
-docs/PLAN.md
-docs/PROJECT_ROADMAP.md
 __pycache__/
 *.pyc
 .env
 .venv
+.ipynb_checkpoints/
+.quarto/
+_site/
+_freeze/
 
 # Build artifacts
 src/shared/EarthViewer/build/

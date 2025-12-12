@@ -1,0 +1,54 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    # Notebooks (kept in-module, rendered into the website)
+    - src/Module_01_Foundations/Learn/01_Introduction_to_Rocket_Science.ipynb
+    - src/Module_01_Foundations/Learn/02_Orbital_Mechanics_Basics.ipynb
+    - src/Module_02_Orbital_Mechanics/Learn/01_Interplanetary_Travel.ipynb
+    - src/Module_03_Propulsion/Learn/01_Rocket_Engines.ipynb
+    - src/Module_03_Propulsion/Learn/02_Propellants_Deep_Dive.ipynb
+
+website:
+  title: "Rocket Basics"
+  site-url: "https://svonstrauss.github.io/rocket-basics/"
+  repo-url: "https://github.com/svonstrauss/rocket-basics"
+  repo-actions: [issue]
+  navbar:
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Module 1 (Foundations)
+        menu:
+          - text: Intro to Rocket Science
+            href: src/Module_01_Foundations/Learn/01_Introduction_to_Rocket_Science.ipynb
+          - text: Orbital Mechanics Basics
+            href: src/Module_01_Foundations/Learn/02_Orbital_Mechanics_Basics.ipynb
+      - text: Module 2 (Orbital Mechanics)
+        menu:
+          - text: Interplanetary Travel
+            href: src/Module_02_Orbital_Mechanics/Learn/01_Interplanetary_Travel.ipynb
+      - text: Module 3 (Propulsion)
+        menu:
+          - text: Rocket Engines
+            href: src/Module_03_Propulsion/Learn/01_Rocket_Engines.ipynb
+          - text: Propellants Deep Dive
+            href: src/Module_03_Propulsion/Learn/02_Propellants_Deep_Dive.ipynb
+    right:
+      - icon: github
+        href: "https://github.com/svonstrauss/rocket-basics"
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: website.css
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    code-tools: true
+    link-external-newwindow: true
+    smooth-scroll: true
+

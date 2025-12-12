@@ -1,0 +1,24 @@
+/* Rocket Basics website tweaks (Quarto / Bootstrap) */
+
+/* Slightly larger base text for readability */
+html {
+  font-size: 17px;
+}
+
+/* Keep line length comfortable for learning content */
+.content {
+  max-width: 1100px;
+}
+
+/* Better focus visibility (keyboard navigation) */
+:focus-visible {
+  outline: 3px solid rgba(0, 212, 255, 0.85);
+  outline-offset: 2px;
+}
+
+/* Make primary buttons a bit more prominent */
+.btn.btn-primary {
+  padding: 0.6rem 0.95rem;
+}
+
+
