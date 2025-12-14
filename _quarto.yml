@@ -43,6 +43,7 @@ website:
         href: "https://github.com/svonstrauss/rocket-basics"
 
 execute:
+  enabled: true
   freeze: false
   echo: true
   warning: false
