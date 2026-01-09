@@ -3,7 +3,7 @@
 **Duration:** 6 Weeks  
 **Goal:** Understand the human and regulatory dimensions of spaceflight that complement pure engineering.
 
-## Projects
+## 🚀 Projects
 
 1. **[Crew Safety Simulator](Projects/Crew_Safety_Simulator/README.md):** Models G-forces and vibrations on astronauts during launch and landing using damped oscillation physics.
 2. **[Space Policy Risk Calculator](Projects/Space_Policy_Calculator/README.md):** A framework to assess regulatory compliance and mission risk for space operations.
@@ -14,12 +14,12 @@
 
 Astronauts face extreme physical stresses that must be carefully managed:
 
-| Stress Type | Typical Limit | SpaceX Context |
-|-------------|---------------|----------------|
-| Sustained G-force | < 4g | Crew Dragon reentry, Starship landing |
-| Peak G-force (short) | < 8g | Emergency abort scenarios |
-| Vibration | 0.5g @ < 20 Hz | 33 Raptor engines during ascent |
-| Impact | < 15g spike | Parachute/propulsive landing |
+| Stress Type | Typical Limit | Example Context |
+|-------------|---------------|-----------------|
+| Sustained G-force | < 4g | Typical crewed ascent + capsule reentry (Crew Dragon, Soyuz, Shenzhou) |
+| Peak G-force (short) | < 8g | Abort / contingency scenarios (launch escape, rapid off‑nominal decel) |
+| Vibration | ~0.5g @ < 20 Hz | Engine + structural vibration during ascent (multi‑engine liquid stages, solids) |
+| Impact | < 15g spike | Landing shock (parachute touchdown, splashdown, propulsive landing) |
 
 ### Damped Oscillation Model
 
@@ -57,33 +57,6 @@ The **25-Year Rule**: Satellites should deorbit within 25 years of mission end.
 $$\text{Orbital Lifetime} \approx \frac{H}{C_D \cdot A/m \cdot \rho}$$
 
 Higher orbits → longer lifetime → greater debris risk.
-
-## Weekly Schedule
-
-### Week 1-2: Human Factors & G-Force Limits
-- NASA-STD-3001 human integration requirements
-- Acceleration profiles during launch/landing
-- Vibration analysis and resonance
-
-### Week 3: Crew Safety Simulator Development
-- Mass-spring-damper ODE implementation
-- Acceleration filtering analysis
-- Parameter optimization for crew comfort
-
-### Week 4: Space Law & Regulations
-- Outer Space Treaty (1967)
-- FAA launch licensing process
-- FCC spectrum allocation for constellations
-
-### Week 5: Risk Assessment Framework
-- Debris risk quantification
-- Collision probability estimation
-- Regulatory compliance scoring
-
-### Week 6: Integration & Portfolio
-- Complete both projects
-- Documentation and testing
-- SpaceX-specific case studies
 
 ## Tools & Libraries
 - `numpy` - Numerical computation

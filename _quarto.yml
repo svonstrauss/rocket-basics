@@ -38,6 +38,14 @@ website:
             href: src/Module_03_Propulsion/Learn/01_Rocket_Engines.ipynb
           - text: Propellants Deep Dive
             href: src/Module_03_Propulsion/Learn/02_Propellants_Deep_Dive.ipynb
+      - text: Module 4 (Human Factors)
+        menu:
+          - text: Human Factors & Policy (Simulations)
+            href: simulations.qmd#module-4
+          - text: Crew Safety Simulator (Docs)
+            href: "https://github.com/svonstrauss/rocket-basics/blob/main/src/Module_04_Human_Factors/Projects/Crew_Safety_Simulator/README.md"
+          - text: Space Policy Risk Calculator (Docs)
+            href: "https://github.com/svonstrauss/rocket-basics/blob/main/src/Module_04_Human_Factors/Projects/Space_Policy_Calculator/README.md"
     right:
       - icon: github
         href: "https://github.com/svonstrauss/rocket-basics"

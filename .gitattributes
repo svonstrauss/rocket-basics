@@ -5,4 +5,9 @@
 *.sh text eol=lf
 binder/start text eol=lf
 
+# Build/config files are easiest to keep LF everywhere (Windows editors handle LF fine).
+*.yml text eol=lf
+*.yaml text eol=lf
+*.qmd text eol=lf
+
 
