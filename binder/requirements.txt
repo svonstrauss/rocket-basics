@@ -6,4 +6,5 @@ plotly>=5.18
 streamlit>=1.28
 jupyterlab>=4.0
 jupyter-server-proxy>=4.1
+ipykernel>=6.0
 

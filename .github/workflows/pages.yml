@@ -36,12 +36,17 @@ jobs:
           pip install -r binder/requirements.txt
           pip install jupyter nbformat nbconvert
 
+      - name: Register Python Jupyter kernel
+        run: |
+          python -m ipykernel install --user --name python3 --display-name "Python 3"
+
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Render site
         env:
           MPLBACKEND: Agg
+          QUARTO_PYTHON: python
         run: |
           quarto render
           touch _site/.nojekyll
