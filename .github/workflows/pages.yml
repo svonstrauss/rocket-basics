@@ -48,7 +48,26 @@ jobs:
           MPLBACKEND: Agg
           QUARTO_PYTHON: python
         run: |
-          quarto render
+          set -euo pipefail
+          quarto --version
+
+          if quarto render 2>&1 | tee quarto-render.log; then
+            echo "Quarto render: OK"
+          else
+            echo "::error::Quarto render failed. Showing the last 80 lines of output:"
+            tail -n 80 quarto-render.log | sed 's/^/::error::/g'
+
+            {
+              echo "### Quarto render failed"
+              echo ""
+              echo "Last 200 lines:"
+              echo ""
+              tail -n 200 quarto-render.log
+            } >> "$GITHUB_STEP_SUMMARY"
+
+            exit 1
+          fi
+
           touch _site/.nojekyll
 
       - name: Upload artifact
