@@ -3,6 +3,15 @@
 **Duration:** 6 Weeks  
 **Goal:** Understand the human and regulatory dimensions of spaceflight that complement pure engineering.
 
+## 🎓 Learning Path
+
+Start with the notebooks in `Learn/` (they’re written for high school + college learners):
+
+| Notebook | Topics Covered | Time |
+|----------|---------------|------|
+| `01_Human_Factors_Basics.ipynb` | g‑loads, vibration, mass‑spring‑damper intuition | 1–2 hours |
+| `02_Space_Policy_Basics.ipynb` | licensing, spectrum, debris, toy risk score | 1–2 hours |
+
 ## 🚀 Projects
 
 1. **[Crew Safety Simulator](Projects/Crew_Safety_Simulator/README.md):** Models G-forces and vibrations on astronauts during launch and landing using damped oscillation physics.

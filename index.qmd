@@ -38,6 +38,11 @@ Rocket Basics is a hands-on collection of Python simulations and notebooks that 
 - [Rocket Engines](src/Module_03_Propulsion/Learn/01_Rocket_Engines.ipynb)
 - [Propellants Deep Dive](src/Module_03_Propulsion/Learn/02_Propellants_Deep_Dive.ipynb)
 
+### Module 4 (Human Factors & Policy)
+
+- [Human Factors Basics](src/Module_04_Human_Factors/Learn/01_Human_Factors_Basics.ipynb)
+- [Space Policy Basics](src/Module_04_Human_Factors/Learn/02_Space_Policy_Basics.ipynb)
+
 ## Run notebooks in your browser (no install)
 
 ### Binder (runs a full Jupyter environment)
@@ -47,6 +52,8 @@ Rocket Basics is a hands-on collection of Python simulations and notebooks that 
 - [Interplanetary Travel (Binder)](https://mybinder.org/v2/gh/svonstrauss/rocket-basics/HEAD?labpath=src/Module_02_Orbital_Mechanics/Learn/01_Interplanetary_Travel.ipynb)
 - [Rocket Engines (Binder)](https://mybinder.org/v2/gh/svonstrauss/rocket-basics/HEAD?labpath=src/Module_03_Propulsion/Learn/01_Rocket_Engines.ipynb)
 - [Propellants Deep Dive (Binder)](https://mybinder.org/v2/gh/svonstrauss/rocket-basics/HEAD?labpath=src/Module_03_Propulsion/Learn/02_Propellants_Deep_Dive.ipynb)
+- [Human Factors Basics (Binder)](https://mybinder.org/v2/gh/svonstrauss/rocket-basics/HEAD?labpath=src/Module_04_Human_Factors/Learn/01_Human_Factors_Basics.ipynb)
+- [Space Policy Basics (Binder)](https://mybinder.org/v2/gh/svonstrauss/rocket-basics/HEAD?labpath=src/Module_04_Human_Factors/Learn/02_Space_Policy_Basics.ipynb)
 
 ### Colab (fastest “click and run”)
 
@@ -55,6 +62,8 @@ Rocket Basics is a hands-on collection of Python simulations and notebooks that 
 - [Interplanetary Travel (Colab)](https://colab.research.google.com/github/svonstrauss/rocket-basics/blob/main/src/Module_02_Orbital_Mechanics/Learn/01_Interplanetary_Travel.ipynb)
 - [Rocket Engines (Colab)](https://colab.research.google.com/github/svonstrauss/rocket-basics/blob/main/src/Module_03_Propulsion/Learn/01_Rocket_Engines.ipynb)
 - [Propellants Deep Dive (Colab)](https://colab.research.google.com/github/svonstrauss/rocket-basics/blob/main/src/Module_03_Propulsion/Learn/02_Propellants_Deep_Dive.ipynb)
+- [Human Factors Basics (Colab)](https://colab.research.google.com/github/svonstrauss/rocket-basics/blob/main/src/Module_04_Human_Factors/Learn/01_Human_Factors_Basics.ipynb)
+- [Space Policy Basics (Colab)](https://colab.research.google.com/github/svonstrauss/rocket-basics/blob/main/src/Module_04_Human_Factors/Learn/02_Space_Policy_Basics.ipynb)
 
 ## Interactive “apps” (hosted separately)
 

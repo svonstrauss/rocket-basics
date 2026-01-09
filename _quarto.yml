@@ -10,6 +10,8 @@ project:
     - src/Module_02_Orbital_Mechanics/Learn/01_Interplanetary_Travel.ipynb
     - src/Module_03_Propulsion/Learn/01_Rocket_Engines.ipynb
     - src/Module_03_Propulsion/Learn/02_Propellants_Deep_Dive.ipynb
+    - src/Module_04_Human_Factors/Learn/01_Human_Factors_Basics.ipynb
+    - src/Module_04_Human_Factors/Learn/02_Space_Policy_Basics.ipynb
 
 website:
   title: "Rocket Basics"
@@ -40,7 +42,11 @@ website:
             href: src/Module_03_Propulsion/Learn/02_Propellants_Deep_Dive.ipynb
       - text: Module 4 (Human Factors)
         menu:
-          - text: Human Factors & Policy (Simulations)
+          - text: Human Factors Basics
+            href: src/Module_04_Human_Factors/Learn/01_Human_Factors_Basics.ipynb
+          - text: Space Policy Basics
+            href: src/Module_04_Human_Factors/Learn/02_Space_Policy_Basics.ipynb
+          - text: Module 4 Simulations
             href: simulations.qmd#module-4
           - text: Crew Safety Simulator (Docs)
             href: "https://github.com/svonstrauss/rocket-basics/blob/main/src/Module_04_Human_Factors/Projects/Crew_Safety_Simulator/README.md"
