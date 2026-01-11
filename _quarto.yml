@@ -12,6 +12,8 @@ project:
     - src/Module_03_Propulsion/Learn/02_Propellants_Deep_Dive.ipynb
     - src/Module_04_Human_Factors/Learn/01_Human_Factors_Basics.ipynb
     - src/Module_04_Human_Factors/Learn/02_Space_Policy_Basics.ipynb
+    - src/Module_05_Astrophysics_ML/Learn/01_Space_Data_Basics.ipynb
+    - src/Module_06_Capstone/Learn/01_Capstone_Planning.ipynb
 
 website:
   title: "Rocket Basics"
@@ -52,6 +54,14 @@ website:
             href: "https://github.com/svonstrauss/rocket-basics/blob/main/src/Module_04_Human_Factors/Projects/Crew_Safety_Simulator/README.md"
           - text: Space Policy Risk Calculator (Docs)
             href: "https://github.com/svonstrauss/rocket-basics/blob/main/src/Module_04_Human_Factors/Projects/Space_Policy_Calculator/README.md"
+      - text: Module 5 (Astrophysics & ML)
+        menu:
+          - text: Space Data Basics
+            href: src/Module_05_Astrophysics_ML/Learn/01_Space_Data_Basics.ipynb
+      - text: Module 6 (Capstone)
+        menu:
+          - text: Capstone Planning
+            href: src/Module_06_Capstone/Learn/01_Capstone_Planning.ipynb
     right:
       - icon: github
         href: "https://github.com/svonstrauss/rocket-basics"

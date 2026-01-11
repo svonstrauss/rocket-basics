@@ -43,6 +43,14 @@ Rocket Basics is a hands-on collection of Python simulations and notebooks that 
 - [Human Factors Basics](src/Module_04_Human_Factors/Learn/01_Human_Factors_Basics.ipynb)
 - [Space Policy Basics](src/Module_04_Human_Factors/Learn/02_Space_Policy_Basics.ipynb)
 
+### Module 5 (Astrophysics & Machine Learning)
+
+- [Space Data Basics](src/Module_05_Astrophysics_ML/Learn/01_Space_Data_Basics.ipynb)
+
+### Module 6 (Capstone)
+
+- [Capstone Planning](src/Module_06_Capstone/Learn/01_Capstone_Planning.ipynb)
+
 ## Run notebooks in your browser (no install)
 
 ### Binder (runs a full Jupyter environment)
@@ -54,6 +62,8 @@ Rocket Basics is a hands-on collection of Python simulations and notebooks that 
 - [Propellants Deep Dive (Binder)](https://mybinder.org/v2/gh/svonstrauss/rocket-basics/HEAD?labpath=src/Module_03_Propulsion/Learn/02_Propellants_Deep_Dive.ipynb)
 - [Human Factors Basics (Binder)](https://mybinder.org/v2/gh/svonstrauss/rocket-basics/HEAD?labpath=src/Module_04_Human_Factors/Learn/01_Human_Factors_Basics.ipynb)
 - [Space Policy Basics (Binder)](https://mybinder.org/v2/gh/svonstrauss/rocket-basics/HEAD?labpath=src/Module_04_Human_Factors/Learn/02_Space_Policy_Basics.ipynb)
+- [Space Data Basics (Binder)](https://mybinder.org/v2/gh/svonstrauss/rocket-basics/HEAD?labpath=src/Module_05_Astrophysics_ML/Learn/01_Space_Data_Basics.ipynb)
+- [Capstone Planning (Binder)](https://mybinder.org/v2/gh/svonstrauss/rocket-basics/HEAD?labpath=src/Module_06_Capstone/Learn/01_Capstone_Planning.ipynb)
 
 ### Colab (fastest “click and run”)
 
@@ -64,6 +74,8 @@ Rocket Basics is a hands-on collection of Python simulations and notebooks that 
 - [Propellants Deep Dive (Colab)](https://colab.research.google.com/github/svonstrauss/rocket-basics/blob/main/src/Module_03_Propulsion/Learn/02_Propellants_Deep_Dive.ipynb)
 - [Human Factors Basics (Colab)](https://colab.research.google.com/github/svonstrauss/rocket-basics/blob/main/src/Module_04_Human_Factors/Learn/01_Human_Factors_Basics.ipynb)
 - [Space Policy Basics (Colab)](https://colab.research.google.com/github/svonstrauss/rocket-basics/blob/main/src/Module_04_Human_Factors/Learn/02_Space_Policy_Basics.ipynb)
+- [Space Data Basics (Colab)](https://colab.research.google.com/github/svonstrauss/rocket-basics/blob/main/src/Module_05_Astrophysics_ML/Learn/01_Space_Data_Basics.ipynb)
+- [Capstone Planning (Colab)](https://colab.research.google.com/github/svonstrauss/rocket-basics/blob/main/src/Module_06_Capstone/Learn/01_Capstone_Planning.ipynb)
 
 ## Interactive “apps” (hosted separately)
 
